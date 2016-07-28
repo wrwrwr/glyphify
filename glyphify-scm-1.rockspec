@@ -32,6 +32,12 @@ build = {
         ['extractors.marr'] = 'extractors/marr.lua',
         ['fitters.brute'] = 'fitters/brute.lua',
         ['fitters.mc'] = 'fitters/mc.lua'
-    }
+    },
+    install = {
+        bin = {
+            extract_glyphs = 'extract_glyphs.py',
+            glyphify = 'glyphify.lua'
+        }
+    },
     copy_directories = {'examples', 'glyphs'}
 }
