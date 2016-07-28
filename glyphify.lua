@@ -61,7 +61,7 @@ end
 
 -- Attempts to locate glyph resources, whether installed or run from source.
 local function find_glyphs(key)
-    bases = {
+    local bases = {
         path.dirname(arg[0]),                -- ./glyphify.lua
         path.dirname(path.dirname(arg[0]))   -- .../bin/glyphify
     }
