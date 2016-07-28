@@ -42,11 +42,11 @@ and a looser acceptance condition:
 ./glyphify.lua math examples/euler.jpg -q 30000 --min_value -2.7
 ```
 
-You could also add `--min_opacity 1` to avoid the symbolic background. Or try
-`./glyphify.lua --help` for a full list of options.
-
 <img src="examples/euler.jpg" alt="Euler's identity" width="400">
 <img src="examples/euler.png" alt="Mathy identity" width="400">
+
+You could also add `--min_opacity 1` to avoid the symbolic background. Or try
+`./glyphify.lua --help` for a full list of options.
 
 Installation
 ------------
@@ -65,7 +65,7 @@ License
 -------
 
 The code is licensed under [MIT][]. The included glyphs were extracted from
-DejaVu Serif font which is also covered by a generous [license][].
+DejaVu Serif font which is covered by a generous [license][].
 
 [MIT]: LICENSE.txt
 [license]: http://dejavu-fonts.org/wiki/License
