@@ -1,7 +1,7 @@
 local class = require('pl.class')
 local torch = require('torch')
 
-local BaseFitter = require('fitters.base')
+local BaseFitter = require('glyphify.fitters.base')
 
 
 local MonteCarloFitter = class(BaseFitter)

@@ -1,6 +1,6 @@
 local class = require('pl.class')
 
-local torchx = require('torchx')
+local torchx = require('glyphify.torchx')
 
 
 local BaseFitter = class()

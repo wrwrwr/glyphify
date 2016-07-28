@@ -2,7 +2,7 @@
 
 local image = require('image')
 local lapp = require('pl.lapp')
-local lapp_color = require('lapp_color')
+local lapp_color = require('glyphify.lapp_color')
 local lfs = require('lfs')
 local path = require('pl.path')
 local torch = require('torch')
@@ -36,13 +36,13 @@ lapp_color.parse_defaults(args, {'color'})
 
 -- Feature extractors command-line keys.
 local extractors = {
-    marr = require('extractors.marr')
+    marr = require('glyphify.extractors.marr')
 }
 
 --- Maps command-line keys to fitter classes.
 local fitters = {
-    brute = require('fitters.brute'),
-    mc = require('fitters.mc')
+    brute = require('glyphify.fitters.brute'),
+    mc = require('glyphify.fitters.mc')
 }
 
 
