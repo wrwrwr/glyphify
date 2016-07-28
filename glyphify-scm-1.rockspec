@@ -29,9 +29,9 @@ build = {
         ['glyphify.extractors.marr'] = 'glyphify/extractors/marr.lua',
         ['glyphify.fitters.base'] = 'glyphify/fitters/base.lua',
         ['glyphify.fitters.brute'] = 'glyphify/fitters/brute.lua',
-        ['glyphify.fitters.mc'] = 'glyphify/fitters/mc.lua'
+        ['glyphify.fitters.mc'] = 'glyphify/fitters/mc.lua',
         ['glyphify.lapp_color'] = 'glyphify/lapp_color.lua',
-        ['glyphify.torchx'] = 'glyphify/torchx.lua',
+        ['glyphify.torchx'] = 'glyphify/torchx.lua'
     },
     install = {
         bin = {
