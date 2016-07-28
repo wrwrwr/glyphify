@@ -30,6 +30,7 @@ build = {
         lapp_color = 'lapp_color.lua',
         torchx = 'torchx.lua',
         ['extractors.marr'] = 'extractors/marr.lua',
+        ['fitters.base'] = 'fitters/base.lua',
         ['fitters.brute'] = 'fitters/brute.lua',
         ['fitters.mc'] = 'fitters/mc.lua'
     },
