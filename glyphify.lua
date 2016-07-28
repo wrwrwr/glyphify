@@ -59,6 +59,22 @@ local function load_gray(img_path)
 end
 
 
+-- Attempts to locate glyph resources, whether installed or run from source.
+local function find_glyphs(key)
+    bases = {
+        path.dirname(arg[0]),                -- ./glyphify.lua
+        path.dirname(path.dirname(arg[0]))   -- .../bin/glyphify
+    }
+    for _, base in pairs(bases) do
+        local dir = path.join(base, 'glyphs', key)
+        if path.exists(dir) then
+            return dir
+        end
+    end
+    error("Could not locate glyphset " .. key)
+end
+
+
 --- Loads all glyphs (.png images) in the folder.
 local function load_glyphs(folder)
     local glyphs = {}
@@ -99,7 +115,7 @@ end
 local img = load_gray(args.image)
 local edges = extractors[args.extractor]().extract_features(img, args)
 local canvas = torch.zeros(edges:size())
-local glyphs = load_glyphs(path.join('glyphs', args.glyphs))
+local glyphs = load_glyphs(find_glyphs(args.glyphs))
 fitters[args.fitter]():fit_glyphs(edges, canvas, glyphs, args, progress_dots())
 image.save(args.output, y2rgba(canvas, args.color))
 print()
